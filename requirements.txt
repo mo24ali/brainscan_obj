@@ -1,0 +1,53 @@
+# Core data processing
+numpy
+pandas
+scipy
+scikit-learn
+Pillow
+opencv-python-headless
+
+# Visualization and exploratory analysis
+matplotlib
+seaborn
+
+# Jupyter
+jupyterlab
+notebook
+ipykernel
+ipywidgets
+
+# Deep learning - TensorFlow/Keras classification
+tensorflow
+
+# Object detection - YOLO
+ultralytics
+
+# Model evaluation and explainability
+torchmetrics
+tensorboard
+mlflow
+
+# Configuration and validation
+python-dotenv
+pydantic
+PyYAML
+jsonschema
+
+# Image and medical imaging utilities
+tqdm
+
+# API and model serving
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Optional interactive prediction interface
+streamlit
+
+# Pipeline orchestration
+apache-airflow
+
+# Testing and code quality
+pytest
+pytest-cov
+ruff
