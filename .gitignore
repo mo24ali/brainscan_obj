@@ -10,10 +10,16 @@ __pycache__/
 htmlcov/
 data/raw/*
 !data/raw/.gitkeep
+# Processed data: ignore by default, allow the manifest
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/manifest.csv
 data/splits/*
 !data/splits/.gitkeep
+!data/splits/train.csv
+!data/splits/validation.csv
+!data/splits/test.csv
+!data/splits/split_summary.json
 data/external/*
 !data/external/.gitkeep
 models/*
