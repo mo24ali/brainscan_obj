@@ -1,0 +1,48 @@
+{
+  "random_state": 42,
+  "split_method": "stratified_image_level",
+  "requested_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "total_samples": 7023,
+  "actual_split_sizes": {
+    "train": 4916,
+    "validation": 1053,
+    "test": 1054
+  },
+  "actual_split_percentages": {
+    "train": 69.9986,
+    "validation": 14.9936,
+    "test": 15.0078
+  },
+  "label_column": "label",
+  "patient_column": null,
+  "class_counts": {
+    "train": {
+      "notumor": 1400,
+      "pituitary": 1230,
+      "meningioma": 1151,
+      "glioma": 1135
+    },
+    "validation": {
+      "notumor": 300,
+      "pituitary": 263,
+      "meningioma": 247,
+      "glioma": 243
+    },
+    "test": {
+      "notumor": 300,
+      "pituitary": 264,
+      "meningioma": 247,
+      "glioma": 243
+    }
+  },
+  "integrity_checks": {
+    "sample_count_matches": true,
+    "image_path_overlap": false,
+    "all_paths_exist": true,
+    "patient_leakage_checked": false
+  }
+}
