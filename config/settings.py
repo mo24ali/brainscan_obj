@@ -51,7 +51,7 @@ TRAIN_RATIO = float(os.getenv("TRAIN_RATIO", "0.70"))
 VALIDATION_RATIO = float(os.getenv("VALIDATION_RATIO", "0.15"))
 TEST_RATIO = float(os.getenv("TEST_RATIO", "0.15"))
 
-IMAGE_SIZE = int(os.getenv("IMAGE_SIZE", "224"))
+IMAGE_SIZE = int(os.getenv("IMAGE_SIZE", "299"))
 IMAGE_CHANNELS = int(os.getenv("IMAGE_CHANNELS", "3"))
 BATCH_SIZE = int(os.getenv("BATCH_SIZE", "32"))
 EPOCHS = int(os.getenv("EPOCHS", "30"))
