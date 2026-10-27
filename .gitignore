@@ -1,6 +1,16 @@
+
+# ==========================================
+# Secrets and environment
+# ==========================================
 .env
+.env.*
+!.env.example
 .venv/
 venv/
+
+# ==========================================
+# Python
+# ==========================================
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
@@ -8,30 +18,86 @@ __pycache__/
 .mypy_cache/
 .coverage
 htmlcov/
+
+# ==========================================
+# Raw dataset — do not push images to GitHub
+# ==========================================
 data/raw/*
 !data/raw/.gitkeep
-# Processed data: ignore by default, allow the manifest
+
+# ==========================================
+# Processed data
+# Track the lightweight manifest only
+# ==========================================
 data/processed/*
 !data/processed/.gitkeep
 !data/processed/manifest.csv
+
+# ==========================================
+# Dataset splits — needed on the remote
+# ==========================================
 data/splits/*
 !data/splits/.gitkeep
 !data/splits/train.csv
 !data/splits/validation.csv
 !data/splits/test.csv
 !data/splits/split_summary.json
+
+# ==========================================
+# External datasets — keep out of Git
+# ==========================================
 data/external/*
 !data/external/.gitkeep
+
+# ==========================================
+# Models — keep large weights out of Git
+# ==========================================
 models/*
 !models/classification/
 !models/detection/
+!models/checkpoints/
+!models/exported/
+
 models/classification/*
 !models/classification/.gitkeep
+
 models/detection/*
 !models/detection/.gitkeep
-mlruns/*
-!mlruns/.gitkeep
+
+models/checkpoints/*
+!models/checkpoints/.gitkeep
+
+models/exported/*
+!models/exported/.gitkeep
+
+# ==========================================
+# MLflow and experiment tracking
+# ==========================================
+mlruns/
+notebooks/mlruns/
+notebooks/mlflow.db
+
+# ==========================================
+# Logs
+# ==========================================
 logs/*
 !logs/.gitkeep
+
 airflow/logs/*
 !airflow/logs/.gitkeep
+
+# ==========================================
+# Generated training outputs
+# ==========================================
+runs/
+wandb/
+outputs/
+*.log
+
+# ==========================================
+# OS and editor
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
