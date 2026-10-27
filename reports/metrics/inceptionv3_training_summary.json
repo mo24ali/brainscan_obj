@@ -1,0 +1,29 @@
+{
+    "architecture": "InceptionV3",
+    "pretrained_weights": "ImageNet",
+    "input_shape": [
+        299,
+        299,
+        3
+    ],
+    "classes": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+    ],
+    "label_to_id": {
+        "glioma": 0,
+        "meningioma": 1,
+        "notumor": 2,
+        "pituitary": 3
+    },
+    "num_classes": 4,
+    "selected_checkpoint": "/home/moali/projects/brainscan_ai/models/classification/inceptionv3_best_finetuned.keras",
+    "final_model": "/home/moali/projects/brainscan_ai/models/classification/inceptionv3_final.keras",
+    "training_samples": 4916,
+    "validation_samples": 1053,
+    "head_epochs_completed": 30,
+    "history_csv": "/home/moali/projects/brainscan_ai/reports/metrics/inceptionv3_training_history.csv",
+    "random_state": 42
+}
