@@ -1,0 +1,59 @@
+{
+    "model": "InceptionV3",
+    "evaluation_split": "test",
+    "test_samples": 1054,
+    "input_shape": [
+        299,
+        299,
+        3
+    ],
+    "class_names": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+    ],
+    "metrics": {
+        "test_samples": 1054,
+        "accuracy": 0.9108159392789373,
+        "macro_precision": 0.906608002011172,
+        "macro_recall": 0.9058557270106977,
+        "macro_f1": 0.9054609356923387,
+        "weighted_precision": 0.9092383547536798,
+        "weighted_recall": 0.9108159392789373,
+        "weighted_f1": 0.9092821819160578,
+        "total_inference_seconds": 31.440736995000407,
+        "average_inference_seconds_per_image": 0.02982992124762847
+    },
+    "confusion_matrix": [
+        [
+            215,
+            22,
+            4,
+            2
+        ],
+        [
+            25,
+            193,
+            11,
+            18
+        ],
+        [
+            3,
+            2,
+            294,
+            1
+        ],
+        [
+            0,
+            6,
+            0,
+            258
+        ]
+    ],
+    "limitations": [
+        "Results depend on the quality and representativeness of the dataset.",
+        "Prediction confidence is not a calibrated measure of clinical certainty.",
+        "This evaluation does not establish clinical safety or diagnostic readiness."
+    ]
+}
