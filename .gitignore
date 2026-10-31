@@ -101,3 +101,6 @@ outputs/
 Thumbs.db
 .vscode/
 .idea/
+/data/raw/
+
+/data/raw.zip

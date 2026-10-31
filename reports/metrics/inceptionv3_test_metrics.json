@@ -22,8 +22,8 @@
         "weighted_precision": 0.9092383547536798,
         "weighted_recall": 0.9108159392789373,
         "weighted_f1": 0.9092821819160578,
-        "total_inference_seconds": 31.440736995000407,
-        "average_inference_seconds_per_image": 0.02982992124762847
+        "total_inference_seconds": 25.454215082998417,
+        "average_inference_seconds_per_image": 0.02415010918690552
     },
     "confusion_matrix": [
         [

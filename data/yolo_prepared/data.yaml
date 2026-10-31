@@ -1,0 +1,8 @@
+path: /home/moali/projects/brainscan_ai/data/yolo_prepared
+train: images/train
+val: images/val
+names:
+  0: glioma
+  1: meningioma
+  2: no_tumor
+  3: pituitary
